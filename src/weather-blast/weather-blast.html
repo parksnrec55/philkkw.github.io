@@ -9,7 +9,7 @@
 
 <body>
     <!--    Main parts of a page: header, nav, main, footer-->
-    <div id="wrapper">
+    <div class="wrapper">
         <header id="page-header">
             <p>Weather</p>
             <form id="page-search">
@@ -22,26 +22,49 @@
                 <li id="home"><a href="weather-blast.html">Home</a></li>
                 <li id="locations">Locations</li>
                 <li id="about">About</li>
-                <li id="logo"><a href="weather-blast.html"><img src="../../images/weather-temp.jpeg" alt="WeatherBlast Home" width="330px" height="80px"></a></li>
             </ul>
+                <img class="logopic" src="../../images/weatherblast-logo.jpg" alt="WeatherBlast Home" width="130" height="80">
+
         </nav>
         <main>
             <h1>Forecast for FRANKLIN, ID</h1>
-            <ul id="hi-lo">
-                <li>High<br>77&deg;<sup>F</sup></li>
-                <li id="conditions"><img src="#" alt="Partly Cloudy"><br>Partly Cloudy</li>
-                <li>Low<br>48&deg;<sup>F</sup></li>
-            </ul>
+            <div class="circle-hi"><ul id="hi-lo" class="circle">
+                <li class="hi">High: 77&deg;<sup>F</sup></li>
+                </ul>
+                </div>
+            <div class="circle-lo">
+                <ul>
+                <li class="lo">Low: 48&deg;<sup>F</sup></li>
+                </ul>
+            </div>
+            <div id="forecast-block">
             <ul>
-                <li>Now: Sunny</li>
-                <li>Precipitation: 0.00 inches</li>
-                <li>Wind: 0-5</li>
-                <li>Direction: SW</li>
-                <li>Longitude: -111.803757</li>
-                <li>Latitude: 42.011902,</li>
-                <li>zip: 83237</li>
+                <li id="conditions">Now: Sunny<img src="../../images/sunny.png" alt="sunny" height="30"> </li>
+                </ul>
+                Today:
+                <ul>
+                <li class="now">Partly Cloudy<img src="../../images/partly-cloudy.png" height="25" alt="Partly Cloudy"></li>
+                <li class="precip">Precip: 0.00"</li>
+                <li class="wind">Wind: 0-5</li>
+                <li class="direction">Direction: SW</li>
+                <li class="long">Longitude: -111.803757</li>
+                <li class="lat">Latitude: 42.011902</li>
+                <li class="zip">ZIP: 83237</li>
 
             </ul>
+            </div>
+            <div class="other">
+                Other Cities:<br>
+            <ul>
+                <li><a href="weather-blast.html">Franklin, ID</a></li>
+                <li><a href="greenville.html">Greenville, SC</a></li>
+                <li><a href="springville.html">Springville, IL</a></li>
+            </ul>
+            </div>
+            <div class="wireframe">
+                 Wireframe Image:<br>
+            <img src="../../homework/mobile-view.jpg" alt="Mobile Sketch Wireframe" width="400">
+            </div>
         </main>
         <footer id="page-footer">&copy; 2017 WeatherBlast, Inc.</footer>
     </div>
