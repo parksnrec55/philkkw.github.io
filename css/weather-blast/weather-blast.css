@@ -6,6 +6,12 @@
 *:after{
     box-sizing: border-box;
 }
+.hourly{
+    display: none;
+}
+@media screen and (min-width: 767px){
+    .hourly{ display: block !important}
+}
 body{
     background-color: lightblue;
     margin: 0;
@@ -63,7 +69,7 @@ body{
 }
 .wrapper{
     width: 100%;
-    background-color: yellowgreen;
+    background-color: #71fcc7;
 }
 .circle-hi{
     width: 300px;
@@ -168,4 +174,10 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.hourly-style{
+    border: 1px solid black;
+    width: 3em;
+    height: 3em;
+    background-color: greenyellow;
 }

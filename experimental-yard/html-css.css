@@ -33,3 +33,10 @@ body{
 #hi-lo #conditions{
     width: 50%;
 }
+/*.searchtext{
+    width: 80%;
+}*/
+
+#page-header form input[placeholder]{
+    width: 80%;
+}
