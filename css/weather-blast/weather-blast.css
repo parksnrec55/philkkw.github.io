@@ -12,6 +12,14 @@
 @media screen and (min-width: 767px){
     .hourly{ display: block !important}
 }
+@media screen and (min-width: 1000px){
+    .hourly{ display: block !important}
+    .hourly-style{
+        border: 2px solid black;
+        width: 5em;
+        height: 5em;
+        background-color: greenyellow;}
+}
 body{
     background-color: lightblue;
     margin: 0;
@@ -176,6 +184,7 @@ body{
     width: 100%;
 }
 .hourly-style{
+    display: inline-block;
     border: 1px solid black;
     width: 3em;
     height: 3em;
