@@ -9,16 +9,17 @@
 .hourly{
     display: none;
 }
+.contact{
+    display: none;
+}
 @media screen and (min-width: 767px){
     .hourly{ display: block !important}
+    .forecast-block{
+    top: 1em !important;
+    color: red !important;}
 }
 @media screen and (min-width: 1000px){
-    .hourly{ display: block !important}
-    .hourly-style{
-        border: 2px solid black;
-        width: 5em;
-        height: 5em;
-        background-color: greenyellow;}
+    .contact{ display: block !important}
 }
 body{
     background-color: lightblue;
@@ -183,10 +184,16 @@ body{
     bottom: 0;
     width: 100%;
 }
+.contact{
+    position: relative;
+    z-index: 50;
+}
 .hourly-style{
+    text-align: center;
+    padding-top: 1em;
     display: inline-block;
     border: 1px solid black;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     background-color: greenyellow;
 }
