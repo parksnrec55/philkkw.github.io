@@ -23,16 +23,15 @@ body{
 
 #hi-lo{
     list-style: none;
-
+    display: flex;
 }
 #hi-lo>li{
-    display: inline;
-    width: 25%
+    flex: 1 1 auto;
 }
 
-#hi-lo #conditions{
+/*#hi-lo #conditions{
     width: 50%;
-}
+}*/
 /*.searchtext{
     width: 80%;
 }*/
