@@ -22,10 +22,18 @@
     .hourly{ display: flex !important}
     .hourly-style{ display: flex !important}
     .hourly-head{ display: block !important}
-    top: 1em !important;
+
+
 }
 @media screen and (min-width: 1000px){
     .contact{ display: block !important}
+    .container-data{
+        display: flex !important;
+        width: 50% !important;
+        position: relative;
+        left: 22em !important;
+        bottom: 18em !important;
+    }
 }
 body{
     background-color: whitesmoke;
@@ -181,37 +189,23 @@ body{
     position: relative;
     z-index: 50;
 }
-/*.hourly{
-    min-height: 200px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    border: 1px dashed black;
-
-
-
-}*/
-/*.hourly-style{
-    text-align: center;
-    border: 1px solid black;
-    width: 4em;
-    height: 4em;
-    background-color: greenyellow;
-}*/
 .hourly{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 10%;
+    position: relative;
+    bottom: 10em;
 }
 .hourly-style{
     border: 1px solid black;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     box-shadow: 0px 0px 4px black;
     border-radius: 5px;
     background-color: orange;
     color: blue;
+    text-align: center;
 }
 .hourly-style:nth-child(-n+6){
     background-color: midnightblue;
