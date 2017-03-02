@@ -1,0 +1,4 @@
+git status
+git add [filename]
+git commit -m
+git push
