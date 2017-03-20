@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($){
   $.ajax({
-    url : "http://api.wunderground.com/api/f2d1c7032fa51e18/conditions/q/CO/Denver.json",
+    url : "https://api.wunderground.com/api/f2d1c7032fa51e18/conditions/q/CO/Denver.json",
     dataType : "jsonp",
     success : function(data){
       console.log(data);
