@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Local WeatherBlast Weather</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/weather-blast/weather-blast.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <!-- *********************************************
+    * Who Did You Collaborate With On This Assessment?
+    * 1. Parker Goldsberry
+    * 2. Aaron Ferguson
+    * 3. Weston Clark
+    * 4.
+    * 5.
+    * ******************************************** -->
+<body>
+    <!--    Main parts of a page: header, nav, main, footer-->
+    <div class="wrapper">
+        <header id="page-header">
+            <p>Weather</p>
+            <form id="page-search">
+            <input type="search" placeholder="Search by city, zip code" name="q">
+                <input type="submit" name="submit">
+            </form>
+        </header>
+        <nav id="page-nav">
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="locations">Locations</li>
+                <li id="about"><a href="about.html">About</a></li>
+            </ul>
+                <img class="logopic" src="../../images/weatherblast-logo.jpg" alt="WeatherBlast Home" width="130" height="80">
+
+        </nav>
+        <main>
+            <h1 id="city">Forecast for<br></h1>
+            <div class="circle-hi"><ul id="hi-lo" class="circle">
+                <li class="hi" id="hightemp">High:<sup>F</sup></li>
+                </ul>
+                </div>
+            <div class="circle-lo">
+                <ul>
+                <li class="lo" id="lotemp">Lo:<sup>F</sup></li>
+                </ul>
+            </div>
+            <div class="forecast-block">
+            <ul>
+                <li id="conditionsnow">Now:</li>
+                </ul>
+                Today:
+                <div class="container-data">
+                <ul>
+                    <li class="forecast-data" id="foreCond">Forecast: -</li>
+                    <li class="forecast-data" id="precip">Precip: -</li>
+                    <li class="forecast-data" id="wind">Wind: -</li>
+                    <li class="forecast-data" id="winddir">Direction: -</li>
+                    <li class="forecast-data" id="latx">Longitude: -</li>
+                    <li class="forecast-data" id="longx">Latitude: -</li>
+                    <li class="forecast-data" id="zip">ZIP: -</li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="hourly">
+                <div class="hourly-style"><em>Hourly:<br>(&deg;F)</em></div>
+                <div class="hourly-style" id="zeroo">00:00-<br>67&deg;</div>
+                <div class="hourly-style" id="onee">01:00-<br>67&deg;</div>
+                <div class="hourly-style" id="twoo">02:00-<br>69&deg;</div>
+                <div class="hourly-style" id="threee">03:00-<br>69&deg;</div>
+                <div class="hourly-style" id="fourr">04:00-<br>69&deg;</div>
+                <div class="hourly-style" id="fivee">05:00-<br>70&deg;</div>
+                <div class="hourly-style" id="sixx">06:00-<br>69&deg;</div>
+                <div class="hourly-style" id="sevenn">07:00-<br>72&deg;</div>
+                <div class="hourly-style" id="eightt">08:00-<br>74&deg;</div>
+                <div class="hourly-style" id="ninee">09:00-<br>77&deg;</div>
+                <div class="hourly-style" id="tenn">10:00-<br>79&deg;</div>
+                <div class="hourly-style" id="elevenn">11:00-<br>81&deg;</div>
+                <div class="hourly-style" id="twelvee">12:00-<br>84&deg;</div>
+                <div class="hourly-style" id="thirteenn">13:00-<br>86&deg;</div>
+                <div class="hourly-style" id="fourteenn">14:00-<br>88&deg;</div>
+                <div class="hourly-style" id="fifteenn">15:00-<br>90&deg;</div>
+                <div class="hourly-style" id="sixteenn">16:00-<br>90&deg;</div>
+                <div class="hourly-style" id="seventeenn">17:00-<br>85&deg;</div>
+                <div class="hourly-style" id="oneeightt">18:00-<br>83&deg;</div>
+                <div class="hourly-style" id="oneninee">19:00-<br>79&deg;</div>
+                <div class="hourly-style" id="twentyy">20:00-<br>74&deg;</div>
+                <div class="hourly-style" id="twoonee">21:00-<br>70&deg;</div>
+                <div class="hourly-style" id="twotwoo">22:00-<br>68&deg;</div>
+                <div class="hourly-style" id="twothreee">23:00-<br>66&deg;</div>
+
+            </div>
+            <div class="other">
+                Other Cities:<br>
+            <ul class="other-cities">
+                <li><a href="weather-blast.html">Franklin, ID</a></li>
+                <li><a href="greenville.html">Greenville, SC</a></li>
+                <li><a href="springville.html">Springville, IL</a></li>
+            </ul>
+            </div>
+            <div class="wireframe">
+                 Wireframe for mobile:<br>
+            <img src="../../homework/mobile-view.jpg" alt="Mobile Sketch Wireframe" width="400"><br>
+                Wireframe for Tablet:<br>
+                <img src="../../homework/tablet-view.jpg" alt="Tablet Sketch Wireframe" width="400"><br>
+                Wireframe for Desktop:<br>
+                <img src="../../homework/desktop-view.jpg" alt="Desktop Sketch Wireframe" width="400"><br>
+            </div>
+        </main>
+        <footer id="page-footer">&copy; 2017 WeatherBlast, Inc. <div class="contact">100 N Street<br>Rexburg, ID</div> </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script src="weather.js"></script>
+    </div>
+</body>
+
+</html>

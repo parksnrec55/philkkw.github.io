@@ -34,6 +34,16 @@
         left: 22em !important;
         bottom: 18em !important;
     }
+    .hourly{
+      position: relative;
+      bottom: 20em !important;
+    }
+}
+@media screen and (max-width: 1000px){
+  .hourly{
+    position: relative;
+    bottom: 0em !important;
+  }
 }
 body{
     background-color: whitesmoke;
@@ -224,4 +234,3 @@ body{
     box-shadow: 0px 0px 7px black;
     border-radius: 4px;
 }
-
