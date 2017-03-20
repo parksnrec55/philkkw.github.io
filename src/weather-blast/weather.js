@@ -50,6 +50,7 @@ $(function () {
 
             var city = $('#city');
             city.html("Forecast for " + location + ", " + state);
+            document.title = location + ", " + state + " | WeatherBlast";
             var hightemp = $('#hightemp');
             hightemp.html("High: " + dayhigh + "&deg;<sup>F</sup>");
             var lotemp = $('#lotemp');
