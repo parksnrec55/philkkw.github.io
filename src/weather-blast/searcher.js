@@ -8,7 +8,7 @@ $('#searchbox').keyup(function(){
     $.each(data.RESULTS, function(key, val) {
       if (val.name.search(rExp) != -1) {
         output += '<li>';
-        output += '<a href="http://api.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/forecast/hourly' + val.l + '.json" title="Click to get weather for ' + val.name + '">' + val.name + '</a>';
+        output += '<a href="https://api.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/forecast/hourly' + val.l + '.json" title="Click to get weather for ' + val.name + '">' + val.name + '</a>';
         output += '</li>';
       }
     });
@@ -178,7 +178,3 @@ $('#searchbox').keyup(function(){
 
   });
 });
-
-  // https://api.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/forecast/hourly/q/" + lat + "," + long + ".json",
-  // dataType : "jsonp",
-  // success : function(data){
