@@ -54,7 +54,7 @@ $('#searchbox').keyup(function(){
         var conditionsnow = $('#conditionsnow');
         conditionsnow.html("Now: " + current + " | " + currentTemp + "&deg;<sup>F</sup>");
         var foreCond = $('#foreCond');
-        foreCond.html("Forecast: " + forecastConditions);
+        foreCond.html("Today's Forecast: " + forecastConditions);
         var precip = $('#precip');
         precip.html("Precipitation: " + precipitation);
         var wind = $('#wind');
