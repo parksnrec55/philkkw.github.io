@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Local WeatherBlast Weather</title>
+    <title>Search | WeatherBlast Weather</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../../css/weather-blast/weather-blast.css" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,15 @@
     <div class="wrapper">
         <header id="page-header">
             <p>Weather</p>
-            <form id="page-search">
-            <input type="search" placeholder="Search by city, zip code" name="q">
-                <input type="submit" name="submit">
+            <div id="searcheroo">
+            <form method="get" action="//autocomplete.wunderground.com/aq" id="page-search">
+              <input type="search" name="query" id="searchbox">
+              <input type="submit" name="submit" value="Search" id="send">
             </form>
+            <div id="searchResults">
+            </div>
+          </div>
+
         </header>
         <nav id="page-nav">
             <ul>
@@ -92,28 +97,13 @@
                 <div class="hourly-style" id="twothreee">23:00-<br>-&deg;</div>
 
             </div>
-            <div class="other">
-                Other Cities:<br>
-            <ul class="other-cities">
-                <li><a href="weather-blast.html">Franklin, ID</a></li>
-                <li><a href="greenville.html">Greenville, SC</a></li>
-                <li><a href="springville.html">Springville, IL</a></li>
-            </ul>
-            </div>
-            <div class="wireframe">
-                 Wireframe for mobile:<br>
-            <img src="../../homework/mobile-view.jpg" alt="Mobile Sketch Wireframe" width="400"><br>
-                Wireframe for Tablet:<br>
-                <img src="../../homework/tablet-view.jpg" alt="Tablet Sketch Wireframe" width="400"><br>
-                Wireframe for Desktop:<br>
-                <img src="../../homework/desktop-view.jpg" alt="Desktop Sketch Wireframe" width="400"><br>
-            </div>
         </main>
         <footer id="page-footer">&copy; 2017 WeatherBlast, Inc. <div class="contact">100 N Street<br>Rexburg, ID</div> </footer>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
-        <script src="weather.js"></script>
+        <script src="searcher.js"></script>
+        <!-- <script src="weather.js"></script> -->
     </div>
 </body>
 
