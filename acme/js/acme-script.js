@@ -9,18 +9,17 @@ $(function() {
           console.log(name);
 
           $("#nav-items").append('<li id="' + name.toLowerCase() + '"><a href="link" title="Go to ' + name + '.">' + name + '</a></li>');
-          console.log(name.toLowerCase());
           
       })
         $('#home').on("click", function( event ){
         event.preventDefault();
+        $(document).attr("title", "ACME Home Page");
         $('#homecontent').show();
         $('#product').css('visibility','hidden');
       })
     $('#page-nav').on("click", ":not(:first-child) a", function( event ){
           event.preventDefault();
         var itemname = this.text;
-        console.log(itemname);
          $("#homecontent").hide();
         $("#product").css('visibility', 'visible');
         var decider;
@@ -36,13 +35,12 @@ $(function() {
         if (itemname == result.navigation[3].nameshort){
             decider = 3;
         }
-        console.log(decider);
         var tion = result.navigation[decider].description;
-        console.log(tion);
         $('#deets').remove();
         $('#details').remove();
         $('#showcase > h1').remove();
         var wholename = result.navigation[decider].name;
+        $(document).attr("title", wholename + " | ACME");
         $('#showcase').append('<h1>' + wholename + '</h1>');
         $('#showcase').append('<div id="details">');
         var imgpath = result.navigation[decider].path;
