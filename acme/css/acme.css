@@ -1,18 +1,61 @@
 * {
   font-family: arial, "arial thin", sans-serif;
-  list-style: none;
   box-sizing: border-box;
 
+}
+
+@media screen and (min-width: 767px){
+    #wrapper{
+        text-align: center;
+        width: 80%;
+        padding: 1em 2em;
+    }
+    .rockettext{
+        font-size: 140% !important;
+        bottom: 10% !important;
+    }
+    .reviews{
+        width: 49%;
+        left: 50%;
+        background-color: #808080;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px black;
+    }
+    #recipies{
+        width: 49%;
+        position: relative;
+        bottom: 8.5em;
+        
+        
+    }
+    
+}
+@media screen and (min-width: 850px){
+    .genius{
+        max-height: 27em;
+    }
 }
 html{
   background-image: url("../images/site/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-#wrapper {
+body{
+/*
+    width: 95%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+*/
+}
+.wrapper {
+    display: block;
 }
 #page-header {
-  background-color: #ffffff;
+    background-color: #ffffff;
+    text-align: center;
 }
 header > img.wide {
   height: 10%;
@@ -25,26 +68,76 @@ header > img.wide {
   position: relative;
   bottom: 1em;
 }
-
+#nav-items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
 #nav-items > li{
   margin: 0;
   padding: 0;
   color: #ffffff;
   font-weight: bold;
-  display: inline-block;
-  padding: 5px 5px;
-  text-align: center;
 }
-li > a {
+#nav-items > li > a {
   color: #ffffff;
   text-decoration: none;
 }
 #nav-items > li:hover{
   background-color: #808080;
 }
-#fondo img{
+#homecontent{
+    background-color: white;
+}
+.genius{
     width: 100%;
+/*    height: 25em;*/
+}
+@media screen and (min-width: 420px) and (max-width: 767px){
+    .rockettext{
+        bottom: 31% !important;
+    }
+}
+.rockettext{
+    width: 50%;
+    list-style: none;
+    text-align: center;
+    font-size: 80%;
+    position: absolute;
+    left: 45%;
+    bottom: 35%;
+    padding: 0;
+    margin: 0;
+    
+}
+.reviews{
+    margin: 0 !important;
+    text-align: left !important;
+    position: relative;
+    top: 1em;
+    font-size: 80%;    
+}
+#recipies > ul{
+    list-style: none;
+    font-size: 80%;
+    position: relative;
+    right: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+@media screen and (max-width: 767px){
+    #actionbtn {
+    width: 55%;
+    }
+    main{
+        font-size: 95%;
+    }
 }
 footer {
   border-top: solid #000000;
+    text-align: center;
 }

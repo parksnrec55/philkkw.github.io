@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div id="wrapper">
+  <div class="wrapper">
     <header id="page-header">
 <!--        This content describes the web site, it's at the top-->
       <img src="images/site/logo.png" alt="ACME logo - Buy here, eat roadrunner">
@@ -22,11 +22,11 @@
         <noscript>JavaScript must be enabled for this site to function</noscript>
     </nav>
     <main>
+        <div id="homecontent">
 <!--        This is for the main content of the page-->
-        <h1>Home Page</h1>
-        <h2></h2>
+        <h1>Welcome to ACME!</h1>
         <div id="fondo">
-            <img src="images/site/feature.jpg" alt="rocket">
+            <img class="genius" src="images/site/feature.jpg" alt="rocket">
             <ul class = rockettext>
                 <li><h2>Acme Rocket</h2></li>
                 <li>Quick lighting fuse</li>
@@ -36,11 +36,30 @@
             </ul>
 
         </div>
-
+        <div class="reviews">
+        <h2>ACME Rocket Reviews</h2>
+        <ul>
+            <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+            <li>"That thing was fast!" (4/5)</li>
+            <li>"Talk about fast delivery." (5/5)</li>
+            <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+            <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+        </ul>
+        </div>
+        <div id="recipies">
+            <h2>Featured Recipies</h2>
+            <ul>
+                <li><img src="images/recipes/bbqsand.jpg"><br><a href="#">Pulled <br>Roadrunner BBQ</a></li>
+                <li><img src="images/recipes/potpie.jpg"><br><a href="#">Roadrunner Pot Pie</a></li>
+                <li><img src="images/recipes/soup.jpg"><br><a href="#">Roadrunner Soup</a></li>
+                <li><img src="images/recipes/taco.jpg"><br><a href="#">Roadrunner Tacos</a></li>
+            </ul>
+        </div>
+        </div>
     </main>
     <footer>
 <!--        Bottom of the page, legal stuff-->
-        <small>&copy; 2017 ACME Inc., All Rights Reserved</small><br>
+        <small>&copy; 2017 ACME Inc, All Rights Reserved.</small><br>
         <small>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</small>
     </footer>
   </div>
