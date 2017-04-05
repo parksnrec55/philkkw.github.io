@@ -1,16 +1,16 @@
 $(function() {
-    $("#nav-items").append('<li id="home"><a href="link" title="Go to home page.">Home</a></li>');
+    $("#nav-items").append('<li id="home"><a href="link">Home</a></li>');
 
 
-    $.getJSON('js/acme.json',function(result) {
+    $.getJSON('../js/acme.json',function(result) {
       $.each(result.navigation, function(i, nav){
           console.log(result);
           var name = result.navigation[i].nameshort;
           console.log(name);
 
-          $("#nav-items").append('<li id="' + name.toLowerCase() + '"><a href="link" title="Go to ' + name + '.">' + name + '</a></li>');
+          $("#nav-items").append('<li id="' + name.toLowerCase() + '"><a href="link">' + name + '</a></li>');
           console.log(name.toLowerCase());
-          
+          console.log("<li id=\"" + name.toLowerCase() + "\"><a href=\"#\">" + name + "</a></li>")
       })
         $('#home').on("click", function( event ){
         event.preventDefault();

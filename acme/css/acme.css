@@ -15,7 +15,7 @@
         bottom: 10% !important;
     }
     .reviews{
-        width: 49%;
+        width: 47%;
         left: 50%;
         background-color: #808080;
         border: 1px solid black;
@@ -23,17 +23,39 @@
         box-shadow: 2px 2px 5px black;
     }
     #recipies{
-        width: 49%;
+        width: 47%;
         position: relative;
         bottom: 8.5em;
+    }
+    #details > img{
+        width: 40% !important;
+        left: 1% !important;
         
-        
+    }
+    #deets{
+        width: 55%;
+        position: absolute;
+        left: 40%;
+        bottom: 20%;
     }
     
 }
 @media screen and (min-width: 850px){
     .genius{
         max-height: 27em;
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        width: 89%;
+        margin: 5%
+    }
+    #deets{
+        width: 45%;
+        bottom: 6%;
+        position: absolute;
+        left: 45%;
+        font-size: 130%;
     }
 }
 html{
@@ -94,7 +116,7 @@ header > img.wide {
     width: 100%;
 /*    height: 25em;*/
 }
-@media screen and (min-width: 420px) and (max-width: 767px){
+@media screen and (min-width: 500px) and (max-width: 767px){
     .rockettext{
         bottom: 31% !important;
     }
@@ -106,12 +128,14 @@ header > img.wide {
     font-size: 80%;
     position: absolute;
     left: 45%;
-    bottom: 35%;
+    bottom: 37%;
     padding: 0;
     margin: 0;
     
 }
 .reviews{
+    color: #ffffff;
+    background-color: #990033;
     margin: 0 !important;
     text-align: left !important;
     position: relative;
@@ -128,6 +152,32 @@ header > img.wide {
     flex-wrap: wrap;
     text-align: center;
     
+}
+#product{
+    visibility: hidden;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+#details > img{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    max-height: 20em;
+}
+#deets{
+    
+}
+.price{
+    list-style: none;
+    color: #de2226;
+    text-align: center;
+    position: relative;
+    right: 10%;
+    top: 1em;
+    font-size: 150%;
 }
 @media screen and (max-width: 767px){
     #actionbtn {
