@@ -4,7 +4,7 @@
     margin: 0px;
 }
 
-nav {
+nav #mainnav {
     margin: 0;
     height: 50px;
     box-shadow: 0px 4px 5px grey;
@@ -14,11 +14,24 @@ nav {
 }
 
 nav span {
+    font-family: 'Nunito', san-serif;
+    font-weight: bold;
+    font-size: 18pt;
+    margin-top: 0.4em;
+    margin-left: 0.7em;
+    color: #6ead3a;
+}
+
+nav span a {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 18pt;
     margin-top: 0.4em;
     margin-left: 0.7em;
+    text-decoration: none;
+}
+
+span a:visited {
     color: #6ead3a;
 }
 
@@ -66,28 +79,64 @@ nav ul li a:visited {
     color: white;
 }
 
+#spacer {
+    height: 3.5em;
+}
+
+header {
+
+}
+
 main {
-    padding-left: 12%;
-    background-color: #8b5a2b;
+    padding-left: 2%;
+    background: url(../img/panorama-small.jpeg) no-repeat  fixed; 
+    background-color: #21201f;
+    background-size: contain;
+    padding-top: 3em;
+    padding-bottom: 7.4em;
+    height: 40em;
+}
+main img {
+
 }
 
 #lander {
-    width: 85%;
+    width: 95%;
+    height: 40em;
+    position: fixed;
+    top: 15%;
     box-shadow: 5px 0px 10px grey;
-    background-color: #C0C0C0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: white;
     
 }
 
 footer {
     width: 100%;
-    height: 5em;
+    height: 10em;
     color: white;
     background-color: #21201f;
-    text-align: center;
+
 }
 
-#foot{
+#data {
+    
+    padding-left: 5%;
+    width: 35%;
+}
 
+#data p {
+    font-size: 14pt;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: dimgray;
+    background-color: #B0E1B0;
+}
+
+footer #foot{
+    text-align: center;
+    background-color: aqua;
 }
 
 footer a:link {
@@ -98,6 +147,8 @@ footer a:link {
     
 }
 
-@media screen and (min-width: 900px){
-    
+@media screen and (min-width: 1024px){
+    #lander {
+        top: 20%;
+    }
 }
